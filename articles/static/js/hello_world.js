@@ -44,4 +44,18 @@ var printStudents = function(students) {
 	console.log('\n')
 };
 
-printStudents(groupmates);
+var filterStudents = function(students) {
+	var group = prompt();
+	return students.filter(
+		student => student["group"] == group
+	);
+};
+
+var filterStudentsMarks = function(students) {
+	var average = parseInt(prompt());
+	return students.filter(
+		student => (student["marks"].reduce(
+			(a, b) => a + b, 0
+		) / student["marks"].length) >= average
+	);
+};
