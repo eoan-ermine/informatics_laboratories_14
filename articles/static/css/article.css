@@ -12,9 +12,17 @@ body {
 
 .post-title a {
 	color: #ffffff;
+	width: 49.9%;
+	text-align: left;
 }
 
-.article-info, .header {
+.fold-button {
+	color: #ffffff;
+	width: 49.9%;
+	text-align: right;
+}
+
+.article-header, .article-info, .header {
 	display: flex;
 	flex-flow: row wrap;
     justify-content: space-between;

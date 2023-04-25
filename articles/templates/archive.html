@@ -22,7 +22,10 @@
 </div>
 {% for post in posts %}
 	<div class="one-post">
-		<h2 class="post-title"><a href="/article/{{post.id}}">{{ post.title }}</a></h2>
+		<div class="article-header">
+			<h2 class="post-title"><a href="/article/{{post.id}}">{{ post.title }}</a></h2>
+			<a href="javascript:void(0);" class="fold-button">Свернуть</a> 
+		</div>
 		<div class="article-info">
 			<div class="article-author">{{ post.author.username }}</div>
 			<div class="article-created-date">{{ post.created_date }}</div>
