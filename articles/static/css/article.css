@@ -10,6 +10,10 @@ body {
 	margin-right: auto;
 }
 
+.one-post.folded .article {
+	display: none
+}
+
 .post-title a {
 	color: #ffffff;
 	width: 49.9%;
