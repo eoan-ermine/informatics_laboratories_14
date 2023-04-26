@@ -52,7 +52,7 @@ var filterStudents = function(students) {
 };
 
 var filterStudentsMarks = function(students) {
-	var average = parseInt(prompt());
+	var average = parseFloat(prompt());
 	return students.filter(
 		student => (student["marks"].reduce(
 			(a, b) => a + b, 0
